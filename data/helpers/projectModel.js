@@ -6,7 +6,7 @@ module.exports = {
     return db('projects');
   },
 
-  findByID: async function findByID(id) {
+  findByID: function findByID(id) {
     const query = db('projects as p');
 
     query.where('p.id', id).first();
