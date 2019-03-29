@@ -5,6 +5,10 @@
   "repository": "https://github.com/shrmn/Sprint-Challenge-RDBMS.git",
   "author": "Dan Sherman <dvsherman@protonmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "helmet": "^3.16.0",
