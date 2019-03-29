@@ -5,7 +5,7 @@ module.exports = {
     return db('projects');
   },
 
-  findById: function findByID(id) {
+  findByID: function findByID(id) {
     return db('projects')
       .where({ id })
       .first();
