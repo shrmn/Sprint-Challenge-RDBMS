@@ -5,8 +5,8 @@ const router = express.Router();
 
 // get project by id
 router.get('/:id', async (req, res) => {
+  const id = req.params.id;
   try {
-    const id = req.params.id;
     const project = await pModel.findByID(id);
     res
       .status(200)
